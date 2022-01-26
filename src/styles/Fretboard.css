@@ -1,0 +1,47 @@
+.fretboard {
+	background-color: #222222;
+	color: #fff;
+}
+.string {
+	display: flex;
+}
+.fret-numbers .note {
+	border: 1px solid #222222;
+	background-color: #222222;
+	color: #ff40b9;
+}
+.fret-numbers .note:first-of-type {
+	visibility: hidden;
+}
+.note {
+	padding: 1rem 0.5rem;
+	border: 1px solid #adadad;
+	flex: 0 0 66px;
+	text-align: center;
+	background-color: #fce4b1;
+	color: #222222;
+}
+.note:first-of-type {
+	border-right: 3px solid;
+	margin-right: 0.5rem;
+	font-weight: 600;
+}
+.note.highlight {
+	background-color: #ff40b9;
+}
+.note.highlight[data-index="0"] {
+	background-color: unset;
+}
+.neck {
+	overflow-x: scroll;
+}
+.highlight-notes {
+	text-align: center;
+	padding: 1rem 0 3rem;
+}
+.highlight-notes section {
+	margin-bottom: 2rem;
+}
+.highlight-notes section span {
+	padding: 0 0.5rem;
+}

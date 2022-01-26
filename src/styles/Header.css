@@ -1,0 +1,28 @@
+.App-header {
+	background-color: #666;
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+nav {
+	width: 100%;
+	text-align: left;
+}
+nav a {
+	color: #ff40b9;
+	text-decoration: none;
+	padding: 0 1rem;
+}
+.wrapper-logo span {
+	display: inline-block;
+	min-height: 70px;
+	font-size: 2.5rem;
+	background: no-repeat center/70% url(../electric-guitar.png);
+}
+.wrapper-logo span a {
+	color: #fff;
+}
