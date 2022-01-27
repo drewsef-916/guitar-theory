@@ -7,9 +7,8 @@ export default function Header() {
 			<nav>
 				<span className="wrapper-logo">
 					<span><Link to="/">Guitar Theory</Link></span>
-					{/* <img className="logo" src={logo} alt="guitar icon" /> */}
 				</span>
-				<Link to="/">Notes</Link>
+				<Link to="/notes">Notes</Link>
 				<Link to="/scales">Scales</Link>
 				<Link to="/info">Info</Link>
 			</nav>

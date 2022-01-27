@@ -30,7 +30,7 @@
 	background-color: #ff40b9;
 }
 .note.highlight[data-index="0"] {
-	background-color: unset;
+	background-color: #fce4b1;
 }
 .neck {
 	overflow-x: scroll;

@@ -14,7 +14,12 @@
 	border-radius: 5px;
 	padding: 0 10px;
 }
-
+h3 {
+	color: #fff;
+}
+label {
+	color: #fff;
+}
 main {
 	background-color: #222222;
 	padding: 2rem 1rem;
@@ -28,7 +33,3 @@ button {
 	border-radius: 3px;
 }
 
-/* page-specific styles */
-.page-scales .highlight-notes {
-	display: none;
-}

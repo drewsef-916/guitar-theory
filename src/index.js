@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
+import Notes from './routes/notes'
 import Scales from './routes/scales'
 import Info from './routes/info'
 
@@ -12,6 +13,7 @@ render(
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<App />} />
+				<Route path="notes" element={<Notes />} />
 				<Route path="scales" element={<Scales />} />
 				<Route path="info" element={<Info />} />
 			</Routes>
