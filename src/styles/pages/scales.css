@@ -1,0 +1,16 @@
+.scale-select {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+.scale-select select {
+	width: 250px;
+	height: 30px;
+	border: 0;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+.scale-select p {
+	color: #fff;
+}

@@ -1,0 +1,10 @@
+.highlight-notes {
+	text-align: center;
+	padding: 1rem 0 3rem;
+}
+.highlight-notes section {
+	margin-bottom: 2rem;
+}
+.highlight-notes section span {
+	padding: 0 0.5rem;
+}

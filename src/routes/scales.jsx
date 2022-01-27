@@ -1,9 +1,10 @@
 import { useState } from "react/cjs/react.development"
+import { useEffect } from "react"
+import { formulasInt, notes, notesSingle } from "../lib/logic"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Fretboard from "../components/Fretboard"
-import { formulasInt, notes, notesSingle } from "../lib/logic"
-import { useEffect } from "react"
+import "../styles/pages/scales.css"
 
 export default function Scales() {
 	const [scaleNotes, setScaleNotes] = useState([])
@@ -51,7 +52,7 @@ export default function Scales() {
 						<p>{scaleNotes.join(" - ")}</p>
 					</div>
 				</section>
-				<Fretboard notesToHighlight={scaleNotes} />
+				<Fretboard notesToHighlight={scaleNotes} rootNote={scaleNotes[0]} />
 			</main>
 			<Footer />
 		</div>

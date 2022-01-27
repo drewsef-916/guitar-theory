@@ -1,8 +1,9 @@
 import { useState } from "react/cjs/react.development"
+import { notesSingle } from "../lib/logic"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import Fretboard from "../components/Fretboard"
-import { notesSingle } from "../lib/logic"
+import "../styles/pages/notes.css"
 
 export default function Notes() {
 	const [highlightedNotes, setHighlightedNotes] = useState([])
