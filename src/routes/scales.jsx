@@ -13,12 +13,12 @@ export default function Scales() {
 	useEffect(() => {
 		const rootNote = notes.indexOf(scaleKey)
 		const scalePattern = formulasInt[scaleName]
-		const notesArray = []
+		const notesArray = [scaleKey]
 		scalePattern.reduce((prev, next) => {
 			notesArray.push(notes[prev + next])
 			return prev + next
 		}, rootNote)
-		setScaleNotes(notesArray)
+		setScaleNotes(notesArray.splice(0,7))
 	}, [scaleKey, scaleName])
 
 	const handleScaleKeyChange = (evt) => {
@@ -46,6 +46,9 @@ export default function Scales() {
 								return <option key={scale} value={scale}>{scale}</option>
 							})}
 						</select>
+					</div>
+					<div>
+						<p>{scaleNotes.join(" - ")}</p>
 					</div>
 				</section>
 				<Fretboard notesToHighlight={scaleNotes} />
