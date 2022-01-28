@@ -1,5 +1,4 @@
-import { useState } from "react/cjs/react.development"
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
 import { formulasInt, notes, notesSingle } from "../lib/logic"
 import Header from "../components/Header"
 import Footer from "../components/Footer"

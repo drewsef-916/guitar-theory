@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.development"
+import { useState } from "react"
 import { notesSingle } from "../lib/logic"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
