@@ -1,0 +1,3 @@
+.page-notesquiz .note:nth-of-type(n+2) {
+    color: #fce4b1;
+}

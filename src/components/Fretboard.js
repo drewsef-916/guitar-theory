@@ -1,7 +1,7 @@
 import { notes } from "../lib/logic"
 import '../styles/Fretboard.css'
 
-export default function Fretboard({ tuning = ['E', 'B', 'G', 'D', 'A', 'E'], notesToHighlight = [], rootNote = '' }) {
+export default function Fretboard({ tuning = ['E', 'B', 'G', 'D', 'A', 'E'], notesToHighlight = [], rootNote = '', third = '', fifth = '' }) {
 
 	const stringNotes = tuning.map((string, index) => {
 		const notesArray = []
@@ -29,7 +29,10 @@ export default function Fretboard({ tuning = ['E', 'B', 'G', 'D', 'A', 'E'], not
 				<div className="fret-notes">{stringNotes.map((string, index) => 
 					<div className="string" key={index}>
 						{string.map((note, index) => {
-							return <span className={"note" + (notesToHighlight.indexOf(note) !== -1 ? " highlight" : "") + (note === rootNote ? " rootnote" : "")} key={index} data-index={index}>{note}</span>
+							return <span
+								className={"note" + (notesToHighlight.indexOf(note) !== -1 ? " highlight" : "") + (note === rootNote ? " rootnote" : "") + (note === third ? " third" : "") + (note === fifth ? " fifth" : "")}
+								key={index}
+								data-index={index}>{note}</span>
 						})}
 					</div>
 				)}</div>

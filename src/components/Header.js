@@ -10,7 +10,9 @@ export default function Header() {
 				</span>
 				<Link to="/notes">Notes</Link>
 				<Link to="/scales">Scales</Link>
-				<Link to="/info">Info</Link>
+				{/* <Link to="/info">Info</Link> */}
+				<Link to="/circle-of-fifths">Circle of Fifths</Link>
+				{/* <Link to="/quiz">Quiz</Link> */}
 			</nav>
 		</header>
 	)

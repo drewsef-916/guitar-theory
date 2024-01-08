@@ -51,7 +51,7 @@ export default function Scales() {
 						<p>{scaleNotes.join(" - ")}</p>
 					</div>
 				</section>
-				<Fretboard notesToHighlight={scaleNotes} rootNote={scaleNotes[0]} />
+				<Fretboard notesToHighlight={scaleNotes} rootNote={scaleNotes[0]} third={scaleNotes[2]} fifth={scaleNotes[4]} />
 			</main>
 			<Footer />
 		</div>

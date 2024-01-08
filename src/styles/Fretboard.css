@@ -32,6 +32,12 @@
 .note.rootnote {
 	background-color: #54f542;
 }
+/* .note.third {
+	background-color: #429ef4;
+}
+.note.fifth {
+	background-color: #f49e42;
+} */
 .note.highlight[data-index="0"] {
 	background-color: #fce4b1;
 }

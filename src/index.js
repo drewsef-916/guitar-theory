@@ -7,6 +7,7 @@ import App from './App';
 import Notes from './routes/notes'
 import Scales from './routes/scales'
 import Info from './routes/info'
+import Quiz from './routes/quiz'
 
 render(
 	<React.StrictMode>
@@ -16,6 +17,7 @@ render(
 				<Route path="notes" element={<Notes />} />
 				<Route path="scales" element={<Scales />} />
 				<Route path="info" element={<Info />} />
+				<Route path="quiz" element={<Quiz />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,
