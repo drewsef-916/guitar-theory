@@ -52,14 +52,18 @@ export default function CircleOfFifths() {
                         data={dataOuter} 
                         labels={({ datum }) => datum.x} 
                         labelRadius={({ innerRadius }) => innerRadius + 20 }
-                        labelComponent={<VictoryLabel style={[{ fill: "#ff40b9", fontSize: 20 }]} />}
+                        labelComponent={<VictoryLabel style={[{ fill: "#ff40b9", fontSize: 20 }]}
+                            events={{onClick: (evt) => {
+                                setCurrentNote(evt.target.textContent);
+                                setChordType("major")
+                            }}} />}
                         innerRadius={145} 
                         standalone={false}
                         events={[
                             {
                                 target: "data",
                                 eventHandlers: {
-                                    onMouseOver: () => {
+                                    onClick: () => {
                                         return [{
                                             target: "labels",
                                             mutation: ({text}) => {
@@ -80,14 +84,18 @@ export default function CircleOfFifths() {
                         data={dataInner} 
                         labels={({ datum }) => datum.x} 
                         labelRadius={({ innerRadius }) => innerRadius + 20 }
-                        labelComponent={<VictoryLabel style={[{ fill: "#ff40b9", fontSize: 20 }]} />}
+                        labelComponent={<VictoryLabel style={[{ fill: "#ff40b9", fontSize: 20 }]}
+                            events={{onClick: (evt) => {
+                                setCurrentNote(evt.target.textContent);
+                                setChordType("minor")
+                            }}} />}
                         innerRadius={75} 
                         standalone={false}
                         events={[
                             {
                                 target: "data",
                                 eventHandlers: {
-                                    onMouseOver: () => {
+                                    onClick: () => {
                                         return [{
                                             target: "labels",
                                             mutation: ({text}) => {
@@ -102,7 +110,11 @@ export default function CircleOfFifths() {
                          />
                 </svg>
                 <div>
-                    <h3>Notes in {currentNote} {chordType} chord:<br />{ chordNotes.join(" - ") }</h3>
+                    {currentNote ? 
+                        <h3>Notes in {currentNote} {chordType} chord:<br />{ chordNotes.join(" - ") }</h3>
+                    :
+                        <h3>Click a note to view the notes in that chord</h3>
+                    }
                 </div>
             </div>
             </main>
