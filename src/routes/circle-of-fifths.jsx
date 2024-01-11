@@ -4,7 +4,7 @@ import { VictoryPie, VictoryLabel } from 'victory';
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import "../App.css"
-import { formulasInt, notes, notesSingle } from "../lib/logic"
+import { formulasInt, notes } from "../lib/logic"
 
 const dataOuter = [{x: "C", y: 1}, {x: "G", y: 1}, {x: "D", y: 1}, {x: "A", y: 1}, {x: "E", y: 1}, {x: "B", y: 1}, {x: "Gb/F#", y: 1}, {x: "Db", y: 1}, {x: "Ab", y: 1}, {x: "Eb", y: 1}, {x: "Bb", y: 1}, {x: "F", y: 1}]
 const dataInner = [{x: "a", y: 1}, {x: "e", y: 1}, {x: "b", y: 1}, {x: "f#", y: 1}, {x: "c#", y: 1}, {x: "g#", y: 1}, {x: "d#", y: 1}, {x: "bb", y: 1}, {x: "f", y: 1}, {x: "c", y: 1}, {x: "g", y: 1}, {x: "d", y: 1}]
