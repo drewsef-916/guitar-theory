@@ -9,7 +9,8 @@ export const formulas = {
 	'Dorian': ['W', 'H', 'W', 'W', 'W', 'H', 'W'],
 	'Aeolian/Minor': ['W', 'H', 'W', 'W', 'H', 'W', 'W'],
 	'Phrygian': ['H', 'W', 'W', 'W', 'H', 'W', 'W'],
-	'Locrian': ['H', 'W', 'W', 'H', 'W', 'W', 'W']
+	'Locrian': ['H', 'W', 'W', 'H', 'W', 'W', 'W'],
+	'Minor Pentatonic': ['WH', 'W', 'W', 'WH', 'W']
 }
 
 export const formulasInt = {
@@ -19,7 +20,8 @@ export const formulasInt = {
 	'Dorian': [2, 1, 2, 2, 2, 1, 2],
 	'Aeolian/Minor': [2, 1, 2, 2, 1, 2, 2],
 	'Phrygian': [1, 2, 2, 2, 1, 2, 2],
-	'Locrian': [1, 2, 2, 1, 2, 2, 2]
+	'Locrian': [1, 2, 2, 1, 2, 2, 2],
+	'Minor Pentatonic': [3, 2, 2, 3, 2]
 }
 
 export const tunings = {

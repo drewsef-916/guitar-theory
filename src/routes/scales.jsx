@@ -18,7 +18,9 @@ export default function Scales() {
 			notesArray.push(notes[prev + next])
 			return prev + next
 		}, rootNote)
-		setScaleNotes(notesArray.splice(0,7))
+		scaleName === 'Minor Pentatonic' ?
+			setScaleNotes(notesArray.splice(0,7)) :
+			setScaleNotes(notesArray.splice(0,7))
 	}, [scaleKey, scaleName])
 
 	const handleScaleKeyChange = (evt) => {
